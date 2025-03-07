@@ -7,11 +7,11 @@ const TaskList = ({ tasks, deleteTask, toggleTask }) => {
         <ul>
             {tasks.map((task, index) => (
                 <Task
-                key={task.id}  // ✅ La clave debe ser el id único
-                task={task}  
-                deleteTask={() => deleteTask(task.id)}  // ✅ Usa task.id en lugar de index
-                toggleTask={() => toggleTask(task.id)}  // ✅ Usa task.id en lugar de index
-            />
+                    key={task.id}  // ✅ La clave debe ser el id único
+                    task={task}  
+                    deleteTask={() => deleteTask(task.id)}  // ✅ Usa task.id en lugar de index
+                    toggleTask={() => toggleTask(task.id)}  // ✅ Usa task.id en lugar de index
+                />
             ))}
         </ul>
     );
