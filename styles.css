@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #f4f4f4; */
+    background-color: #ccd1d1;
+    text-align: center;
+  }
+  
+  .app-container {
+    max-width: 450px;
+    margin: 50px auto;
+    background: #f8f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .task-form input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .task-form button {
+    background: #27ae60;
+    color: white;
+    /* border: none; */
+    border: 2px solid green;
+    padding: 8px 15px;
+    cursor: pointer;
+  }
+  
+  .task-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .task-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #e5e7e9;
+    margin-bottom: 5px ;
+    border-radius: 4px ;
+    align-items: center;
+    /* cursor: pointer; */
+  }
+  
+  .task-item.completed {
+    
+    text-decoration: line-through;
+    color: gray;
+  }
+
+
+.task-text {
+    flex: 1; /* Ocupa el espacio disponible */
+    word-wrap: break-word; /* Rompe el texto si es muy largo */
+}
+  
+  .task-item button {
+    
+    background: red;
+    color: white;
+    border-radius: 6px  solid #ec7063;
+    cursor: pointer;
+    flex-shrink: 0; /* Evita que el botón cambie de tamaño */
+    margin-left: 10px; 
+  }
+  
